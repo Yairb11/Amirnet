@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>תרגול אמירנט</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>תרגול אמירנט – אנגלית אקדמית</h1>
+  <div id="progress" class="hidden"></div>
+</header>
+
+<div id="hud" class="hidden" dir="ltr"></div>
+
+<main id="app">
+  <section id="menu">
+    <p class="lead">בחר מבחן או פרק לתרגול. התשובה הנכונה נחשפת רק אחרי שבחרת תשובה.</p>
+    <h2 class="menu-title">משחק אינסופי</h2>
+    <div class="cards">
+      <button class="card endless" data-mode="endless">
+        <h2>♾️ משחק אינסופי – מעורב</h2>
+        <p>שאלה אחת בכל פעם, השלמת משפטים וניסוח מחדש. תשובה, הסבר, והבאה. צוברים SCORE בלי סוף</p>
+      </button>
+      <button class="card endless" data-mode="endless:s">
+        <h2>♾️ Sentence Completions</h2>
+        <p>משחק אינסופי של השלמת משפטים בלבד</p>
+      </button>
+      <button class="card endless" data-mode="endless:r">
+        <h2>♾️ Restatements</h2>
+        <p>משחק אינסופי של ניסוח מחדש בלבד</p>
+      </button>
+    </div>
+    <h2 class="menu-title">10 מבחנים מלאים</h2>
+    <div class="tests-grid" id="testsGrid"></div>
+    <h2 class="menu-title">תרגול אקראי מהמאגר</h2>
+    <div class="cards">
+      <button class="card" data-mode="full">
+        <h2>מבחן מלא</h2>
+        <p>אקראי מכל המאגר: 2 פרקי השלמת מילים · קטע קריאה · 2 פרקי ניסוח מחדש · השלמת משפטים</p>
+      </button>
+      <button class="card" data-mode="sentences">
+        <h2>Sentence Completions</h2>
+        <p>4 שאלות אקראיות מתוך המאגר (195 שאלות, חלקן עם שני חסרים)</p>
+      </button>
+      <button class="card" data-mode="reading">
+        <h2>Reading Comprehension</h2>
+        <p>קטע קריאה אקראי + 5 שאלות</p>
+      </button>
+      <button class="card" data-mode="restatements">
+        <h2>Restatements</h2>
+        <p>3 שאלות אקראיות מתוך המאגר</p>
+      </button>
+    </div>
+  </section>
+
+  <section id="quiz" class="hidden" dir="ltr"></section>
+  <section id="result" class="hidden"></section>
+</main>
+
+<script src="vocab.js"></script>
+<script src="vocab2.js"></script>
+<script src="questions.js"></script>
+<script src="tests1.js"></script>
+<script src="tests2.js"></script>
+<script src="tests3.js"></script>
+<script src="tests4.js"></script>
+<script src="sentences2.js"></script>
+<script src="sentences3.js"></script>
+<script src="he.js"></script>
+<script src="reading.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
